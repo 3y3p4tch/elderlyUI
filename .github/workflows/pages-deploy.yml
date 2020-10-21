@@ -1,0 +1,89 @@
+# This is a basic workflow to help you get started with Actions
+
+name: 'Automatic Build'
+
+# Controls when the action will run. Triggers the workflow on push request
+# events but only for the master branch
+on:
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - .gitignore
+      - README.md
+      - LICENSE
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  continuous-delivery:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    env:
+      GEMS_PATH: /tmp/bundle
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 2.7.x
+          
+      - name: Install tools
+        run: |
+          sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys CC86BB64
+          sudo add-apt-repository ppa:rmescandon/yq
+          sudo apt update
+          sudo apt install yq -y
+          
+
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Bundle Caching
+        id: bundle-cache
+        uses: actions/cache@v1
+        with:
+          path: ${{ env.GEMS_PATH }}
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+
+      - name: Bundle config
+        run: |
+          bundle config path ${{ env.GEMS_PATH }}
+
+      - name: Bundle Install
+        if: steps.bundle-cache.outputs.cache-hit != 'true'
+        run: |
+          bundle install
+
+      - name: Bundle Install locally
+        if: steps.bundle-cache.outputs.cache-hit == 'true'
+        run: |
+          bundle install --local
+
+      - name: Check baseurl
+        run: |
+          baseurl="$(grep '^baseurl:' _config.yml | yq r - baseurl)"
+          if [[ -n $baseurl ]]; then
+            echo "SPEC_TEST=_site_no_baseurl" >> $GITHUB_ENV
+          fi
+
+      - name: Build Site
+        run: |
+          bash tools/build.sh
+
+          if [[ -n $SPEC_TEST ]]; then
+            # Bypass the defects of htmlproofer
+            bash tools/build.sh -b "" -d "$SPEC_TEST"
+          fi          
+
+      - name: Test Site
+        run: |
+          bash tools/test.sh "$SPEC_TEST"
+
+      - name: Deploy
+        run: |
+          bash tools/deploy.sh
