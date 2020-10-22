@@ -4,15 +4,9 @@
 #  © 2020 Cotes Chung
 #  MIT Licensed
 
-
--
-  name: Home
-  icon: "fas fa-home"
 -
   name: The 7Cs of Innovation
-  icon: "fas fa-stream"
-  path: tabs
-  url: innovation-journey
+  icon: "fas fa-home"
 -
   name: "Team"
   icon: "fas fa-info"
