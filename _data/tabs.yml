@@ -9,22 +9,12 @@
   name: Home
   icon: "fas fa-home"
 -
-  name: Categories
+  name: The 7Cs of Innovation
   icon: "fas fa-stream"
   path: tabs
-  url: categories
+  url: innovation-journey
 -
-  name: "Tags"
-  icon: "fas fa-tags"
-  path: tabs
-  url: tags
--
-  name: "Archives"
-  path: tabs
-  url: archives
-  icon: "fas fa-archive"
--
-  name: "About"
+  name: "Team"
   icon: "fas fa-info"
   path: tabs
-  url: about
+  url: team
