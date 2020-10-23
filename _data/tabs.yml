@@ -7,11 +7,11 @@
 -
   name: Home
   icon: "fas fa-home"
--
-  name: The 7Cs of Innovation
-  icon: "fas fa-brain"
-  path: tabs
-  url: innovation-journey
+# -
+#   name: The 7Cs of Innovation
+#   icon: "fas fa-brain"
+#   path: tabs
+#   url: innovation-journey
 -
   name: "Team"
   icon: "fas fa-users"
