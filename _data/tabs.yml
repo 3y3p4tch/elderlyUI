@@ -5,10 +5,15 @@
 #  MIT Licensed
 
 -
-  name: The 7Cs of Innovation
+  name: Home
   icon: "fas fa-home"
 -
-  name: "Team"
-  icon: "fas fa-info"
+  name: The 7Cs of Innovation
+  icon: "fas fa-brain"
   path: tabs
+  url: innovation-journey
+-
+  name: "Team"
+  icon: "fas fa-users"
+  path: ''
   url: team
