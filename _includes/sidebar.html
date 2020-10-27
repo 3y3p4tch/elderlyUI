@@ -27,7 +27,7 @@
     </div>
   </div>
 
-  <ul class="nav flex-column flex-nowrap">
+  <ul class="nav">
   {%- assign page_urls = page.url | split: "/" -%}
 
   {% for item in site.data.tabs %}
@@ -40,18 +40,19 @@
       {% endif %}
     {% endif %}
     {%- if item.subitems -%}
-    <li>
+    <li class="w-100">
       <a href="#{{ item.name | url_encode }}" class="nav-link d-flex justify-content-start align-items-center w-100" role="button" data-toggle="collapse" aria-haspopup="true" aria-expanded="false">
         <i class="fa-fw {{ item.icon }} ml-2 mr-2 ml-xl-3 mr-xl-3"></i>
         <span>{{ item.name }}</span>
       </a>
-      <div class="collapse flex-column w-100" id="{{ item.name | url_encode }}">
+      <div class="collapse flex-column w-100  pl-2 pl-xl-3" id="{{ item.name | url_encode }}">
         {%- for subitem in item.subitems -%}
         <div class="nav-item 
         {% if subitem.url == page.url
           or subitem.name == page.tab_active
           or subitem.name == "Home" and page.layout == "home" %}active{% endif %}">
-          <a class="nav-link w-100 ml-2 ml-xl-3" href="{{ subitem.url | relative_url }}">
+          <a class="nav-link" href="{{ subitem.url | relative_url }}">
+            <i class="fa-fw far fa-dot-circle ml-2 mr-2 ml-xl-3 mr-xl-3"></i>
             <span>{{ subitem.name }}</span>
           </a>
         </div>
@@ -60,7 +61,7 @@
     </li>
     <!-- .nav-item -->
     {%- else -%}
-    <li class="nav-item
+    <li class="nav-item w-100
       {% if item.url == page_urls.last
         or item.name == page.tab_active
         or item.name == "Home" and page.layout == "home" %}active{% endif %}">

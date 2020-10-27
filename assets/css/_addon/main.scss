@@ -129,7 +129,7 @@ $sidebar-display: "sidebar-display";
     }
   }
   ul {
-    height: $tab-height * $tab-count;
+    // height: $tab-height * $tab-count;
     display: -webkit-box;
     display: -ms-flexbox;
 
