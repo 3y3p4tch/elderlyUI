@@ -116,7 +116,7 @@ $sidebar-display: "sidebar-display";
     letter-spacing: 1px;
   }
   .nav-item {
-    height: $tab-height;
+    // height: $tab-height;
     &:hover {
       .nav-link {
         color: #f8f9facf;
@@ -133,8 +133,8 @@ $sidebar-display: "sidebar-display";
     display: -webkit-box;
     display: -ms-flexbox;
 
-    >li:last-child {
-      >a {
+    li {
+      a {
         margin-right: -3px;
         max-width: calc(100% - 3px);
       }

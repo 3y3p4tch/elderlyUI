@@ -27,8 +27,8 @@
     </div>
   </div>
 
-  <ul class="nav flex-column">
-  {% assign page_urls = page.url | split: "/" %}
+  <ul class="nav flex-column flex-nowrap">
+  {%- assign page_urls = page.url | split: "/" -%}
 
   {% for item in site.data.tabs %}
     {% assign ref = site.baseurl | append: "/" %}
@@ -39,16 +39,37 @@
         {% assign ref = ref | append: item.url | append: "/" %}
       {% endif %}
     {% endif %}
-
-    <li class="nav-item d-flex justify-content-center
+    {%- if item.subitems -%}
+    <li>
+      <a href="#{{ item.name | url_encode }}" class="nav-link d-flex justify-content-start align-items-center w-100" role="button" data-toggle="collapse" aria-haspopup="true" aria-expanded="false">
+        <i class="fa-fw {{ item.icon }} ml-2 mr-2 ml-xl-3 mr-xl-3"></i>
+        <span>{{ item.name }}</span>
+      </a>
+      <div class="collapse flex-column w-100" id="{{ item.name | url_encode }}">
+        {%- for subitem in item.subitems -%}
+        <div class="nav-item 
+        {% if subitem.url == page.url
+          or subitem.name == page.tab_active
+          or subitem.name == "Home" and page.layout == "home" %}active{% endif %}">
+          <a class="nav-link w-100 ml-2 ml-xl-3" href="{{ subitem.url | relative_url }}">
+            <span>{{ subitem.name }}</span>
+          </a>
+        </div>
+        {%- endfor -%}
+      </div>
+    </li>
+    <!-- .nav-item -->
+    {%- else -%}
+    <li class="nav-item
       {% if item.url == page_urls.last
         or item.name == page.tab_active
         or item.name == "Home" and page.layout == "home" %}active{% endif %}">
-      <a href="{{ ref }}" class="nav-link d-flex justify-content-center align-items-center w-100">
-        <i class="fa-fw {{ item.icon }} ml-xl-3 mr-xl-3 unloaded"></i>
+      <a href="{{ ref }}" class="nav-link d-flex justify-content-start align-items-center w-100">
+        <i class="fa-fw {{ item.icon }} ml-2 mr-2 ml-xl-3 mr-xl-3"></i>
         <span>{{ item.name }}</span>
       </a>
-    </li> <!-- .nav-item -->
+    </li>
+    {%- endif -%}
   {% endfor %}
 
   </ul> <!-- ul.nav.flex-column -->

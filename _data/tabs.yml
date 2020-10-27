@@ -7,11 +7,24 @@
 -
   name: Home
   icon: "fas fa-home"
-# -
-#   name: The 7Cs of Innovation
-#   icon: "fas fa-brain"
-#   path: tabs
-#   url: innovation-journey
+-
+  name: The 7Cs of Innovation
+  icon: "fas fa-brain"
+  subitems:
+    -
+      name: Cause
+      url: /posts/cause/
+    -
+      name: Context
+      url: /posts/context/
+    -
+      name: Comprehension
+      url: /posts/comprehension/
+    -
+      name: Check
+      url: /posts/check/
+    
+
 -
   name: "Team"
   icon: "fas fa-users"
