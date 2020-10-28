@@ -2,6 +2,7 @@
 title: Comprehension
 author: Team
 math: true
+image: /assets/img/posts/phone_u.jpeg
 ---
 
 Nowadays, there has been an enormous increase in the use of digital technology, especially smartphones. However, the elder generation has also started getting familiar with this to-date technology. But the elder generation comparatively works on smartphones for a short period of time, i.e., once in the morning, once in the afternoon, and then in the evening, a total of approximately two hours. The primary purpose of working on mobiles is to connect with family members and then execute some everyday scheduled work. However, there are many points that the elders are hesitant in using the mobiles for a longer duration. Following are the points of context from the elderly perspective:
