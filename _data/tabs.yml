@@ -23,6 +23,15 @@
     -
       name: Check
       url: /posts/check/
+    -
+      name: Conception
+      url: /posts/conception/
+    -
+      name: Crafting
+      url: /posts/crafting/
+    -
+      name: Connection
+      url: /posts/connection/
     
 
 -
