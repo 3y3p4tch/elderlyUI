@@ -32,6 +32,9 @@ The Contacts option shows the frequently contacts on the top and voice search op
 <img src="{{ "/assets/img/posts/conception4_2.jpg" | relative_url }}">
 <img src="{{ "/assets/img/posts/conception4_3.jpg" | relative_url }}">
 </div>
+<div>
+<img src="{{ "/assets/img/posts/All Apps.png" | relative_url }}">
+</div>
 
 <b>Concept 2:</b> The apps under the All Apps option are shown only with their large colored icons and its name in small text.
 <div>
