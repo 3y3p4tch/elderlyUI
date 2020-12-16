@@ -4,18 +4,18 @@ author: Team
 math: true
 ---
 
-The most important part of any product is it's connection with the consumers. The connection is made only when the user is satisfied with the product and begins to cherish it, which creates a demand of the product. 
-
-Consumer satisfaction makes the winning product and completes the most important criterion for innovation.
-
-We talked with a few customers about their experiences with the launcher. A general response is listed below.
-
 {%- capture divclass -%}
     "d-flex flex-row justify-content-center flex-wrap"
 {%- endcapture -%}
 {%- capture imgstyle -%}
     class="border img-fluid rounded flex-md-fill m-1" style="max-height: 600px"
 {%- endcapture -%}
+
+The most important part of any product is it's connection with the consumers. The connection is made only when the user is satisfied with the product and begins to cherish it, which creates a demand of the product. 
+
+Consumer satisfaction makes the winning product and completes the most important criterion for innovation.
+
+We talked with a few customers about their experiences with the launcher. A general response is listed below.
 
 <div class={{ divclass }}>
 <img src="{{ "/assets/img/posts/connection.jpg" | relative_url }}" {{ imgstyle }}>
