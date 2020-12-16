@@ -10,6 +10,18 @@ Consumer satisfaction makes the winning product and completes the most important
 
 We talked with a few customers about their experiences with the launcher. A general response is listed below.
 
+{%- capture divclass -%}
+    "d-flex flex-row justify-content-center flex-wrap"
+{%- endcapture -%}
+{%- capture imgstyle -%}
+    class="border img-fluid rounded flex-md-fill m-1" style="max-height: 600px"
+{%- endcapture -%}
+
+<div class={{ divclass }}>
+<img src="{{ "/assets/img/posts/connection.jpg" | relative_url }}" {{ imgstyle }}>
+<img src="{{ "/assets/img/posts/connection2.jpg" | relative_url }}" {{ imgstyle }}>
+</div>
+
 <h3>Q. How comfortable are you using our launcher?</h3>
 <p>Ans. This launcher is exactly what I needed. We used to have issues telling the time or checking remaining battery power. Opening apps was also a bit difficult as I had to tap on smaller app icons with my shaking hands. This launcher improves our experience quite a bit. The app icons are large, battery icons and time are shown in large fonts which makes them easier to see, and contact management is also made quite easy with some frequent contacts on the home screen. The theme is also pretty clean and easy on the eyes.</p>
 
