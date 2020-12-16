@@ -4,8 +4,6 @@ author: Team
 math: true
 ---
 
-Now we arrive at the ideas to overcome the problems discussed above.
-
 {%- capture divclass -%}
     "d-flex flex-row justify-content-center flex-wrap"
 {%- endcapture -%}
@@ -13,6 +11,7 @@ Now we arrive at the ideas to overcome the problems discussed above.
     class="border img-fluid rounded flex-md-fill m-1" style="max-height: 400px"
 {%- endcapture -%}
 
+Now we arrive at the ideas to overcome the problems discussed above.
 
 <h2>Home Screen</h2>
 <b>Concept 1:</b> We focussed on having only essential apps on the home screen for easy navigating for the elderly. The essential apps include Calling, Contacts, Messaging, Gallery, Camera and an All Apps icon, along with the time and battery left in mobile in large font.
