@@ -5,7 +5,7 @@ math: true
 ---
 
 <div>
-<a src="https://drive.google.com/file/d/1OkuARRP9D67T7pUREcPjUfQiV7RfQfQP/view?usp=sharing">Adobe XD project prototype</a>
+<a href="https://drive.google.com/file/d/1OkuARRP9D67T7pUREcPjUfQiV7RfQfQP/view?usp=sharing">Adobe XD project prototype</a>
 </div>
 
 Some of the key features of the launcher that will benefit elderly: 
