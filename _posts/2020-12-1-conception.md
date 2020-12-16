@@ -95,6 +95,7 @@ We also ensure to keep the <b>font size of numbers</b> on the dialing keypad to 
 </div>
 <div>
 <img src="{{ "/assets/img/posts/Contacts.png" | relative_url }}">
+<img src="{{ "/assets/img/posts/Dail Pad.png" | relative_url }}">
 </div>
 
 <h2>Messaging App</h2>
