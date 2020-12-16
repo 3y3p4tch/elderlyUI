@@ -19,4 +19,4 @@ Some of the key features of the launcher that will benefit elderly:
 3. Frequent Contacts feature is also there
 4. Not much scrolling, most of day to day stuff is accessible on single clicks
 5. Can change the language to any native language
-6. Contains a tutorial explaining the Launcher
+6. Removed unnecessary steps or information required in apps such as alarm, calender, etc.
