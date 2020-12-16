@@ -24,6 +24,9 @@ The Contacts option shows the frequently contacts on the top and voice search op
 <img src="{{ "/assets/img/posts/conception3_1.jpg" | relative_url }}">
 <img src="{{ "/assets/img/posts/conception3_2.jpg" | relative_url }}">
 </div>
+<div>
+<img src="{{ "/assets/img/posts/HomeScreen.png" | relative_url }}">
+</div>
 
 <h2>All Apps option</h2>
 <b>Concept 1:</b> The apps under the All Apps option are shown as a list with their icons and names in large text.
@@ -46,6 +49,9 @@ The general qwerty keypad is replaced with the <b>alphabetical keypad</b>, i.e. 
 <div>
 <img src="{{ "/assets/img/posts/conception6.jpg" | relative_url }}">
 </div>
+<div>
+<img src="{{ "/assets/img/posts/Keyboard.png" | relative_url }}">
+</div>
 
 <h2>Settings App</h2>
 Original Settings apps have over 19 headings and 120+ sub-headings out of which over ~75% of them are of no use to the elderly therefore we have our own simplified version of the settings menu for easier navigation
@@ -59,12 +65,19 @@ Original Settings apps have over 19 headings and 120+ sub-headings out of which 
 <div>
 <img src="{{ "/assets/img/posts/conception9.jpg" | relative_url }}">
 </div>
+<div>
+<img src="{{ "/assets/img/posts/Settings.png" | relative_url }}">
+<img src="{{ "/assets/img/posts/Settings – 2.png" | relative_url }}">
+</div>
 
 <h2>Lock Screen</h2>
 The lock screen contains the day, date and time. Other than this, it contains the torch and camera. The <b>torch</b> is placed on the lock screen as elderly most of the time don’t find it easily and when their power cuts they face a lot of problems or they need it to search many things at home.
 <div>
 <img src="{{ "/assets/img/posts/conception10.jpg" | relative_url }}">
 <img src="{{ "/assets/img/posts/conception11.jpg" | relative_url }}">
+</div>
+<div>
+<img src="{{ "/assets/img/posts/Lockscreen.png" | relative_url }}">
 </div>
 
 <h2>Contacts App</h2>
@@ -80,6 +93,9 @@ We also ensure to keep the <b>font size of numbers</b> on the dialing keypad to 
 <img src="{{ "/assets/img/posts/conception16.jpg" | relative_url }}">
 <img src="{{ "/assets/img/posts/conception17.jpg" | relative_url }}">
 </div>
+<div>
+<img src="{{ "/assets/img/posts/Contacts.png" | relative_url }}">
+</div>
 
 <h2>Messaging App</h2>
 The <b>font size is increased</b> so the elderly do not have to strain their eyes to find and type the letters. The keypad consists of an option from where the elderly can <b>change the language</b> of the keypad and thus, can chat freely in their native language.
@@ -88,4 +104,7 @@ The <b>font size is increased</b> so the elderly do not have to strain their eye
 <img src="{{ "/assets/img/posts/conception19.jpg" | relative_url }}">
 <img src="{{ "/assets/img/posts/conception20.jpg" | relative_url }}">
 <img src="{{ "/assets/img/posts/conception21.jpg" | relative_url }}">
+</div>
+<div>
+<img src="{{ "/assets/img/posts/Texting.png" | relative_url }}">
 </div>
