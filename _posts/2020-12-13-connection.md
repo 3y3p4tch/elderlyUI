@@ -22,6 +22,10 @@ We talked with a few customers about their experiences with the launcher. A gene
 <img src="{{ "/assets/img/posts/connection2.jpg" | relative_url }}" {{ imgstyle }}>
 </div>
 
+<div class="embed-responsive embed-responsive-4by3">
+<iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1kK_2ei77SnoZ_ZKTV1qUzQ4NR9yB_8gC/preview" allowfullscreen></iframe>
+</div>
+
 <audio controls>
     <source src= "{{ "/assets/audio/connection.mpeg" | relative_url }}" type="audio/mpeg">
 </audio>
@@ -34,3 +38,8 @@ We talked with a few customers about their experiences with the launcher. A gene
 
 <h3>Q. How likely are you to recommend this launcher to your other elderly friends?</h3>
 <p>Ans. The launcher seems pretty great and it eases our day-to-day use cases. I’d highly recommend this to anyone who has difficulty working with smartphones but only uses some common day to day activities.</p>
+
+<h3>Summary</h3>
+<div class="embed-responsive embed-responsive-4by3">
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NZgidNfuc1U" allowfullscreen></iframe>
+</div>
